@@ -37,29 +37,65 @@ a:hover {
   padding: 15px 25px;
 }
 
-
 .h {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border: 5px solid red;
+  flex-basis: 100%;
+  padding: 10px;
+  overflow: hidden;
 }
 
-.h > * {
-    border: 5px solid red;
-    flex-basis: 50%;
-    padding: 15px;
-    
+.logo {
+  width: 10%; 
+  height: auto; 
+  transform: scale(0.9); 
+  left: 0;
+  margin: 10px;
+  position: relative;
+  z-index: 2; 
+}
+
+
+
+@media (max-width: 768px) {
+  .logo {
+    height: 100px; 
+    width: 100px;
+  }
 }
 .menu2 {
     display: flex;
-    justify-content: flex-end;
     gap: 15px;
+
+     
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    border: 2px solid green;
-    padding: 10em;
+.hero {
+  display: flex;
+  justify-content: center;
+  border: 2px solid green;
+  padding: 25em;
+  background-image: url(img/robertcohendiv_a_milion_cats_with_suits_smoking_cigars._investi_227c1537-1599-46ad-8fa2-41dc97a07622\ \(1\)\ \(1\).png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
 .CTA{
     display: flex;
     justify-content: center;
