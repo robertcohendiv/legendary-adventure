@@ -88,6 +88,17 @@ a:hover {
   text-align: center;
 
 }
+.hero1{
+  display: flex;
+  justify-content: center;
+  padding: 20em;
+  background-image: url(img/robertcohendiv_buisness_cat_working_the_phones_at_a_headfund_wo_ae5b3264-5bfa-455e-ab5c-7888c352269f.png);  /* Change this line */
+  background-size: cover;
+  background-position: center -200px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
 
 .hero::before {
   content: "";
