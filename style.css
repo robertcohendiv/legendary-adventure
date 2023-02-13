@@ -239,3 +239,15 @@ footer {
   text-decoration: none;
   font-size: 14px;
 }
+
+.fff{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  border: solid 1px red;
+  width: 60% ;
+  padding: 15px;
+  
+}
